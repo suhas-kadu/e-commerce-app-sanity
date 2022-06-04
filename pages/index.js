@@ -1,8 +1,9 @@
 import React from "react";
-import { HeroBanner } from "../components/index";
+import { FooterBanner, HeroBanner, Product } from "../components/index";
 import { client } from "../lib/client";
 
 const Home = ({ products, bannerData }) => {
+  console.log(products);
   return (
     <>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
@@ -10,8 +11,14 @@ const Home = ({ products, bannerData }) => {
         <h2>Best Selling products</h2>
         <p>Speakers of many variations</p>
       </div>
-      <div className="">{["p1", "p2", "p3"].map((p) => p)}</div>
-      Footer
+      <div className="products-container">
+        {products?.map((product) => (
+          // console.log(product);
+          <Product key={product._id} product={product} />
+        ))}
+      </div>
+
+      <FooterBanner footerBanner={bannerData && bannerData[0]} />
     </>
   );
 };
