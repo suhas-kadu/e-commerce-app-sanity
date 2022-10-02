@@ -3,6 +3,7 @@ import React from "react";
 import { urlFor } from "../lib/client";
 
 const HeroBanner = ({ heroBanner }) => {
+  console.log(heroBanner);
   return (
     <div className="hero-banner-container">
       <div>
@@ -15,7 +16,7 @@ const HeroBanner = ({ heroBanner }) => {
           alt="headphones"
         />
         <div>
-          <Link href={`products/${heroBanner.product}`}>
+          <Link href={`/product/${heroBanner.product}`}>
             <button type="button">{heroBanner.buttonText}</button>
           </Link>
           <div className="desc">
