@@ -15,13 +15,14 @@ const ProductDetails = ({ product, productsList }) => {
 
   const [index, setIndex] = useState(0);
 
-  const { quantity, increaseQuantity, decreaseQuantity, onAdd, setShowCart } = useStateContext();
+  const { quantity, increaseQuantity, decreaseQuantity, onAdd, setShowCart } =
+    useStateContext();
 
   const handleBuyNow = () => {
     onAdd(product, quantity);
 
     setShowCart(true);
-  }
+  };
 
   return (
     <div>
@@ -75,10 +76,10 @@ const ProductDetails = ({ product, productsList }) => {
             </p>
           </div>
           <div className="buttons">
-            <button type="button" className="add-to-cart"
-              onClick={() =>
-                onAdd(product, quantity)
-              }
+            <button
+              type="button"
+              className="add-to-cart"
+              onClick={() => onAdd(product, quantity)}
             >
               Add to Cart
             </button>
@@ -134,7 +135,7 @@ export const getStaticProps = async ({ params: { slug } }) => {
   console.log(productsList);
 
   return {
-    props: { product, productsList, },
+    props: { product, productsList },
   };
 };
 

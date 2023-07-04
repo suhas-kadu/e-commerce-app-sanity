@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <p className="logo">
-        <Link href="/">E-commerce</Link>
+        <Link href="/">Audio Hub</Link>
       </p>
 
       <button

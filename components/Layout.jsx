@@ -1,15 +1,13 @@
-import react from "react";
+import React from "react";
 import Head from "next/head";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-
-import React from "react";
 
 const Layout = ({ children }) => {
   return (
     <div className="layout">
       <Head>
-        <title>E-commerce Web App</title>
+        <title>Audio Hub</title>
       </Head>
 
       <header>

@@ -1,14 +1,7 @@
 import React from "react";
 import {
-  AiFillFacebook,
-  AiFillTwitterSquare,
-  AiFillLinkedin,
-  AiFillInstagram,
   AiOutlineFacebook,
-  AiOutlineTwitterSquare,
-  AiOutlineLinkedin,
   AiOutlineInstagram,
-  AiOutlineTwitter,
   AiFillTwitterCircle,
 } from "react-icons/ai";
 
